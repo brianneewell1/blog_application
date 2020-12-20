@@ -1,0 +1,19 @@
+{
+  "name": "blog_application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "comment-routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianneewell1/blog_application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianneewell1/blog_application/issues"
+  },
+  "homepage": "https://github.com/brianneewell1/blog_application#readme"
+}
