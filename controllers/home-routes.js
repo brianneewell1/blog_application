@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, Comment, User } = require("../models/");
+const { Post, Comment, User } = require("../models");
 
 //get posts for homepage
 router.get("/", (req,res) => {
