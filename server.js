@@ -44,4 +44,3 @@ app.listen(PORT, () => {
     sequelize.sync({force:false});
 });
 
-module.exports = router;
