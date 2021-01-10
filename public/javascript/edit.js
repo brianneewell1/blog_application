@@ -1,5 +1,3 @@
-const { post } = require("../../controllers");
-
 const editFormHandler = async function(event) {
     event.preventDefault();
 

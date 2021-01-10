@@ -3,7 +3,7 @@ const express = require("express");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 
-const sequelize = require("./config/connection");
+const sequelize = require("./config/connection.js");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -27,6 +27,7 @@ const sess = {
     })
 };
 
+
 app.use(session(sess));
 
 app.engine("handlebars", hbs.engine);
@@ -42,3 +43,5 @@ app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
     sequelize.sync({force:false});
 });
+
+module.exports = router;
