@@ -14,7 +14,10 @@ router.post("/", withAuth, (req,res) => {
     });
 });
 
+//console logs to find URL here to update path to edit.js
 router.put("/:id", withAuth, (req,res) => {
+  console.log("res: "+res);
+  console.log("request: "+req);
     Post.update(req.body, {
         where: {
             id: req.params.id
@@ -49,5 +52,16 @@ router.delete("/:id", withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
+
+router.get('/delete/:id', withAuth, function(req, res, next) {
+    var id= req.params.id;
+      var sql = 'DELETE FROM User WHERE id = ?';
+      db.query(sql, [id], function (err, data) {
+      if (err) throw err;
+      console.log(data.affectedRows + " record(s) updated");
+    });
+    res.redirect('/users/user-list');
+    
+  });
 
 module.exports = router;

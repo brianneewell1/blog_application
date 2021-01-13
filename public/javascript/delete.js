@@ -1,8 +1,8 @@
 const deletePostHandler = async function(event) {
     event.preventDefault();
     const postId = document.getElementById('post-id')
-
-    fetch("/api/post-routes/" + postId.value, {
+console.log("postId:", postId);
+    fetch("/api/post/:id" + postId.value, {
         method: "delete"
     })
     .then(function(){
@@ -12,4 +12,3 @@ const deletePostHandler = async function(event) {
 }
 
 document.addEventListener('#deleteBtn', deletePostHandler);
-console.log("delete button clicked");
