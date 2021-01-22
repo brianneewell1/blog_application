@@ -1,7 +1,13 @@
 # blog_application
 
+# Deployed Application
+https://blog-app2020.herokuapp.com/
+
 # Summary 
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
+
+# Demo
+https://drive.google.com/file/d/1mwYTryoc6--KeRN0XT8hrh20H-Tf-oVb/view
 
 # User Story
 AS A developer who writes about tech
